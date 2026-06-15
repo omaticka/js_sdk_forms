@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bloomreach JS SDK Dynamic Forms Sample</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="eyebrow">Forms example</p>
+        <h1>New season running gear</h1>
+        <p>
+          This page represents ordinary customer content. The dynamic form is
+          rendered above it as a movable weblayer, just like a campaign popup.
+        </p>
+        <button id="show-form" class="primary-button" type="button">
+          Show form
+        </button>
+      </header>
+
+      <section class="content-grid" aria-label="Sample page content">
+        <article>
+          <h2>Personalized drops</h2>
+          <p>
+            Collect preferences without sending customers away from the current
+            page.
+          </p>
+        </article>
+        <article>
+          <h2>Native page underneath</h2>
+          <p>
+            The form floats over normal HTML content and can be dragged by its
+            header.
+          </p>
+        </article>
+        <article>
+          <h2>SDK tracking</h2>
+          <p>
+            Submit uses the same `exponea.track(eventType, properties)` style
+            API.
+          </p>
+        </article>
+      </section>
+
+      <section class="event-log" aria-live="polite">
+        <div class="event-log__header">
+          <h2>Tracked events</h2>
+          <button id="clear-log" type="button">Clear</button>
+        </div>
+        <pre id="events">No events yet.</pre>
+      </section>
+    </main>
+
+    <script src="../dist/src/forms-core.js"></script>
+    <script src="../dist/src/forms-renderer.js"></script>
+    <script src="../dist/src/exponea-forms.js"></script>
+    <script src="../dist/sample/app.js"></script>
+  </body>
+</html>

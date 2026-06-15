@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "2026-06-01",
+  "formId": "preference-capture",
+  "revision": "sample-1",
+  "campaignId": "sample-weblayer-campaign",
+  "title": "Tell us what you like",
+  "submitLabel": "Save preferences",
+  "fields": [
+    {
+      "id": "favorite_category",
+      "type": "text",
+      "name": "favorite_category",
+      "title": "Favorite category",
+      "placeholder": "Running shoes",
+      "required": true,
+      "maxLength": 80
+    },
+    {
+      "id": "favorite_brand",
+      "type": "text",
+      "name": "favorite_brand",
+      "title": "Favorite brand",
+      "placeholder": "Bloomreach",
+      "required": false,
+      "maxLength": 80
+    },
+    {
+      "id": "email_opt_in",
+      "type": "checkbox",
+      "name": "email_opt_in",
+      "title": "Send me personalized email updates",
+      "required": false,
+      "defaultValue": false
+    }
+  ],
+  "tracking": {
+    "eventType": "dynamic_form_submit"
+  }
+}
+

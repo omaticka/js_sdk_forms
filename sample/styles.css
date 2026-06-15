@@ -1,0 +1,264 @@
+:root {
+  color: #1b2733;
+  background: #f4f7fb;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 48px;
+}
+
+.hero {
+  max-width: 760px;
+  padding: 56px 0 40px;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: #0d7d7b;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0;
+  color: #102033;
+  font-size: 54px;
+  line-height: 1.02;
+  letter-spacing: 0;
+}
+
+.hero p {
+  max-width: 620px;
+  color: #526173;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.primary-button,
+.event-log button {
+  border: 0;
+  border-radius: 6px;
+  background: #0d7d7b;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.primary-button {
+  padding: 12px 18px;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin: 16px 0 32px;
+}
+
+.content-grid article,
+.event-log {
+  border: 1px solid #dce5ef;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(27, 39, 51, 0.06);
+}
+
+.content-grid article {
+  padding: 24px;
+}
+
+.content-grid h2,
+.event-log h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.content-grid p {
+  margin: 0;
+  color: #526173;
+  line-height: 1.55;
+}
+
+.event-log {
+  max-width: 920px;
+  overflow: hidden;
+}
+
+.event-log__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e7edf4;
+  padding: 14px 16px;
+}
+
+.event-log button {
+  padding: 8px 12px;
+}
+
+.event-log pre {
+  min-height: 160px;
+  margin: 0;
+  overflow: auto;
+  padding: 16px;
+  color: #2c3b4c;
+  font-size: 13px;
+  line-height: 1.45;
+  white-space: pre-wrap;
+}
+
+.br-weblayer {
+  position: fixed;
+  z-index: 10000;
+  width: min(390px, calc(100vw - 24px));
+  border: 1px solid rgba(13, 125, 123, 0.24);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 24px 70px rgba(16, 32, 51, 0.28);
+  overflow: hidden;
+}
+
+.br-weblayer--dragging {
+  user-select: none;
+  box-shadow: 0 28px 80px rgba(16, 32, 51, 0.34);
+}
+
+.br-weblayer__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 12px 11px 16px;
+  background: #f0fbfa;
+  border-bottom: 1px solid #dcefed;
+  cursor: move;
+  touch-action: none;
+}
+
+.br-weblayer__eyebrow {
+  color: #0a6765;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.br-weblayer__close {
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #405166;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.br-weblayer__close:hover {
+  background: #d9efed;
+}
+
+.br-weblayer__body {
+  padding: 18px;
+}
+
+.br-form {
+  display: grid;
+  gap: 14px;
+}
+
+.br-form__title {
+  margin: 0 0 2px;
+  color: #102033;
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.br-form__field {
+  display: grid;
+  gap: 6px;
+}
+
+.br-form__field--checkbox {
+  grid-template-columns: 18px 1fr;
+  align-items: start;
+}
+
+.br-form__label {
+  color: #2a394b;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.br-form__input {
+  width: 100%;
+  min-height: 42px;
+  border: 1px solid #c9d6e3;
+  border-radius: 6px;
+  padding: 9px 11px;
+  color: #172435;
+}
+
+.br-form__input:focus {
+  border-color: #0d7d7b;
+  box-shadow: 0 0 0 3px rgba(13, 125, 123, 0.15);
+  outline: none;
+}
+
+.br-form__error {
+  border-radius: 6px;
+  background: #fff3f0;
+  color: #9f2f1c;
+  padding: 10px 12px;
+  font-size: 13px;
+}
+
+.br-form__submit {
+  min-height: 44px;
+  border: 0;
+  border-radius: 6px;
+  background: #0d7d7b;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.br-form__submit:disabled {
+  cursor: wait;
+  opacity: 0.66;
+}
+
+@media (max-width: 760px) {
+  .page {
+    padding: 28px 18px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
