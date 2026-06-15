@@ -14,7 +14,7 @@ The goal is to show the simplest production-shaped split:
 
 No React, bundler, or framework runtime is required. TypeScript is used only for source authoring and tooling; the browser sample loads compiled JavaScript from `dist/`. Of course this is just for a quick PoC.
 
-## Why TypeScript Here
+## Types and payload formats
 
 TypeScript makes the SDK-facing contracts easier to evolve: form definitions, field types, submitted values, renderer handles, and `exponea.forms` APIs are visible to editor tooling before runtime.
 
