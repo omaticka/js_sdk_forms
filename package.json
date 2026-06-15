@@ -1,0 +1,13 @@
+{
+  "name": "js-sdk-forms",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Lightweight JavaScript SDK dynamic forms prototype with TypeScript-authored source.",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}
