@@ -57,6 +57,16 @@ http://127.0.0.1:8099/js_sdk_forms/sample/
 
 The sample creates a mock `window.exponea`, installs `window.exponea.forms`, fetches a local form definition, renders it as a weblayer-style popup, and logs `banner` plus `dynamic_form_submit` events on the page.
 
+## Screenshots
+
+Draggable weblayer-style form:
+
+![Draggable dynamic form popup](docs/screenshots/form-popup.png)
+
+Tracked events after form interaction:
+
+![Tracked Dynamic Forms events](docs/screenshots/tracked-events.png)
+
 ## Proposed JS SDK API Shape
 
 In the example fetched URL is expected to follow existing REST API style used in exponea
